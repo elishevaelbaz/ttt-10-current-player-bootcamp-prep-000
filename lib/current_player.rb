@@ -5,7 +5,7 @@ def turn_count(board)
       counter+=1
     end
   end
-  return counter
+  counter
 end
 
 t = turn_count(["O", " ", " ", " ", "X", " ", " ", " ", "X"])
