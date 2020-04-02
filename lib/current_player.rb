@@ -12,7 +12,9 @@ end
 # puts t
 
 def current_player(board)
-  if turn_count(board).even? 
+  apple_stock > 1 ? :eat_apple : :buy_apple
+
+  turn_count(board).even? ? "X" : "O"
     "X"
   else
     "O"
